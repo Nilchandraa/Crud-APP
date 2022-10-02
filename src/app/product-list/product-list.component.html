@@ -1,0 +1,22 @@
+<h2>Product List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Product_id</th>
+            <th>Product_name</th>
+            <th>Product_type</th>
+            <th>Product_category</th>
+            <th>Product_price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let Product of Product ">
+            <td> {{ Product.product_id}}</td>
+            <td> {{ Product.product_name}}</td>
+            <td> {{ Product.product_type}}</td>
+            <td> {{ Product.product_category}}</td>
+            <td> {{ Product.product_price}}</td>
+         </tr>
+    </tbody>
+
+</table>
